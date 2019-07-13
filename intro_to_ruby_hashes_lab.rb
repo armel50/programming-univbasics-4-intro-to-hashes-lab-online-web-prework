@@ -15,7 +15,11 @@ def id_generator
 end
 
 def my_hash_creator(key, value)
-  if key 
+  if key.i_a? Interger
+    {key: "value"}
+  else
+    {"#{key}" : " value"}
+  end
 
 end
 
